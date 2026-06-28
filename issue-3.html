@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Issue #3: I built an AI micro-tool in 7 days for $0 | AI Hustle Lab</title>
+    <meta name="description" content="Week 1 results from building an AI micro-tool website for $0. Real numbers, real mistakes, and the honest report.">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%232563EB'/%3E%3Ctext x='50' y='68' font-family='Arial' font-size='60' font-weight='bold' fill='white' text-anchor='middle'%3EAH%3C/text%3E%3C/svg%3E">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Georgia, 'Times New Roman', serif; line-height: 1.8; color: #1E293B; background: white; }
+        nav { background: white; border-bottom: 1px solid #E2E8F0; padding: 16px 20px; }
+        .nav-container { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .nav-logo { font-weight: 800; color: #0F172A; text-decoration: none; font-size: 1.1rem; font-family: -apple-system, sans-serif; }
+        .nav-links a { color: #64748B; text-decoration: none; margin-left: 24px; font-size: 0.95rem; font-weight: 500; font-family: -apple-system, sans-serif; }
+        .article { max-width: 680px; margin: 0 auto; padding: 60px 20px; }
+        .article-meta { text-align: center; margin-bottom: 40px; }
+        .issue-badge { display: inline-block; background: #EFF6FF; color: #2563EB; padding: 6px 14px; border-radius: 100px; font-size: 0.85rem; font-weight: 700; margin-bottom: 16px; font-family: -apple-system, sans-serif; }
+        .article-date { color: #94A3B8; font-size: 0.9rem; font-family: -apple-system, sans-serif; }
+        h1 { font-size: clamp(2rem, 5vw, 3rem); font-weight: 800; line-height: 1.2; margin-bottom: 30px; text-align: center; font-family: -apple-system, sans-serif; letter-spacing: -0.02em; }
+        h2 { font-size: 1.5rem; font-weight: 700; margin: 40px 0 16px; font-family: -apple-system, sans-serif; }
+        p { font-size: 1.125rem; margin-bottom: 24px; }
+        a { color: #2563EB; }
+        ul { margin: 20px 0 24px 24px; font-size: 1.125rem; }
+        li { margin-bottom: 8px; }
+        hr { border: none; border-top: 1px solid #E2E8F0; margin: 40px 0; }
+        .cta-box { background: linear-gradient(135deg, #2563EB 0%, #1E40AF 100%); color: white; padding: 40px; border-radius: 16px; text-align: center; margin: 40px 0; font-family: -apple-system, sans-serif; }
+        .cta-box h3 { font-size: 1.5rem; margin-bottom: 12px; }
+        .cta-box p { opacity: 0.95; margin-bottom: 20px; }
+        .cta-box a { display: inline-block; background: #10B981; color: white; padding: 14px 32px; border-radius: 10px; text-decoration: none; font-weight: 700; }
+        .signature { margin-top: 50px; padding-top: 30px; border-top: 1px solid #E2E8F0; font-style: italic; color: #64748B; }
+        footer { background: #F8FAFC; padding: 40px 20px; text-align: center; color: #64748B; font-size: 0.9rem; border-top: 1px solid #E2E8F0; font-family: -apple-system, sans-serif; }
+        footer a { color: #2563EB; text-decoration: none; margin: 0 8px; }
+        @media (max-width: 600px) { .nav-links a:not(:last-child) { display: none; } }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="/" class="nav-logo">⚡ AI Hustle Lab</a>
+            <div class="nav-links">
+                <a href="/">Home</a>
+                <a href="/blog.html">Blog</a>
+                <a href="/archive.html">Archive</a>
+                <a href="/lead-magnet.html">Free Stack</a>
+            </div>
+        </div>
+    </nav>
+    
+    <article class="article">
+        <div class="article-meta">
+            <div class="issue-badge">ISSUE #3 · FRIDAY</div>
+            <div class="article-date">January 10, 2026</div>
+        </div>
+        
+        <h1>I built an AI micro-tool in 7 days for $0 — the honest week-1 report</h1>
+        
+        <p>Seven days ago I started building an AI micro-tool website.</p>
+        
+        <p>Goal: see if I could build and launch a real AI side hustle for $0, using only free tools, and document everything.</p>
+        
+        <p>Here's the honest week-1 report.</p>
+        
+        <h2>The idea</h2>
+        
+        <p>I'm building an online character counter tool — the kind people search for when writing tweets, meta descriptions, or essays with character limits.</p>
+        
+        <p>I picked this because:</p>
+        <ul>
+            <li>People search "character counter" ~500K times/month</li>
+            <li>The existing top results are ugly and outdated</li>
+            <li>It's buildable in a weekend with AI</li>
+            <li>Monetization is clear (display ads + affiliate links)</li>
+        </ul>
+        
+        <h2>What I spent</h2>
+        <p><strong>Total: $0</strong></p>
+        <ul>
+            <li>Domain: $0 (using free Cloudflare subdomain for now)</li>
+            <li>Hosting: $0 (Cloudflare Pages free tier)</li>
+            <li>AI tools: $0 (Claude free + ChatGPT free)</li>
+            <li>Design: $0 (Canva free)</li>
+        </ul>
+        
+        <h2>Time invested</h2>
+        <ul>
+            <li>Research & validation: 3 hours</li>
+            <li>Build: 8 hours</li>
+            <li>Content & SEO: 4 hours</li>
+            <li>Total: ~15 hours over 7 days</li>
+        </ul>
+        
+        <h2>What I learned</h2>
+        
+        <p><strong>1. Free AI tools are slower but workable.</strong> Claude free has wait times during peak hours. Plan content in batches.</p>
+        
+        <p><strong>2. The hardest part isn't building — it's picking the right idea.</strong> I almost shipped 3 bad ideas before settling on this one. Validation matters.</p>
+        
+        <p><strong>3. SEO is a slow game.</strong> I won't know if this works for 60-90 days. Patience is the hardest part.</p>
+        
+        <h2>Results so far (week 1)</h2>
+        
+        <p>Honest numbers:</p>
+        <ul>
+            <li>Visitors: 23</li>
+            <li>Signups: 0 (no email list yet)</li>
+            <li>Revenue: $0</li>
+            <li>Google ranking: not in top 100 yet</li>
+        </ul>
+        
+        <p>Yes, it's slow. Yes, this is normal. The compound effect starts around month 3-4.</p>
+        
+        <h2>Next week's plan</h2>
+        
+        <p>Add 5 articles, submit to Google Search Console, apply for AdSense, and start tracking keyword rankings.</p>
+        
+        <h2>The takeaway</h2>
+        
+        <p>Building an AI side hustle for $0 is real. It's not fast, it's not easy, and it's not magic. But it's possible — and the tools in 2026 are good enough that you don't need a budget to start.</p>
+        
+        <div class="cta-box">
+            <h3>Get the AI Income Stack (Free)</h3>
+            <p>The exact 30 tools, prompts, and systems I'm using to build AI side hustles for $0/month.</p>
+            <a href="/lead-magnet.html">Download Free →</a>
+        </div>
+        
+        <p>If you want to follow the experiment week-by-week, you're in the right place.</p>
+        
+        <p>Hit reply: what AI side hustle would YOU want me to test next?</p>
+        
+        <div class="signature">
+            — [Your Name]<br>
+            Founder, AI Hustle Lab
+        </div>
+        
+        <p><em>P.S. — Some ideas I'm considering for future experiments: AI-generated children's books on Amazon KDP, faceless YouTube channel with AI voice, AI-powered Notion templates on Gumroad. Which should I build next?</em></p>
+    </article>
+    
+    <footer>
+        <p>© 2026 AI Hustle Lab · Built by a real human with AI tools</p>
+        <p><a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/contact.html">Contact</a></p>
+    </footer>
+</body>
+</html>

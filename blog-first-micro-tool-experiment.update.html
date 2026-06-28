@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Built an AI Micro-Tool in 7 Days for $0 — The Honest Report | AI Hustle Lab</title>
+    <meta name="description" content="Week 1 results from building an AI micro-tool website for $0. Real numbers, real mistakes, and what I'd do differently.">
+    <meta name="keywords" content="micro niche site, AI side hustle, build website for free, AdSense">
+    <link rel="canonical" href="https://ai-hustle-lab.pages.dev/blog-first-micro-tool-experiment.html">
+    
+    <meta property="og:title" content="I Built an AI Micro-Tool in 7 Days for $0">
+    <meta property="og:description" content="Week 1 honest report. Real numbers. Real mistakes.">
+    <meta property="og:type" content="article">
+    
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%232563EB'/%3E%3Ctext x='50' y='68' font-family='Arial' font-size='60' font-weight='bold' fill='white' text-anchor='middle'%3EAH%3C/text%3E%3C/svg%3E">
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "I Built an AI Micro-Tool in 7 Days for $0",
+        "datePublished": "2026-01-08"
+    }
+    </script>
+    
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Georgia, 'Times New Roman', serif; line-height: 1.8; color: #1E293B; background: white; }
+        nav { background: white; border-bottom: 1px solid #E2E8F0; padding: 16px 20px; position: sticky; top: 0; z-index: 100; }
+        .nav-container { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .nav-logo { font-weight: 800; color: #0F172A; text-decoration: none; font-size: 1.1rem; font-family: -apple-system, sans-serif; }
+        .nav-links a { color: #64748B; text-decoration: none; margin-left: 24px; font-size: 0.95rem; font-weight: 500; font-family: -apple-system, sans-serif; }
+        .nav-links a:hover { color: #2563EB; }
+        .article { max-width: 720px; margin: 0 auto; padding: 60px 20px; }
+        .breadcrumb { font-family: -apple-system, sans-serif; font-size: 0.85rem; color: #64748B; margin-bottom: 20px; }
+        .breadcrumb a { color: #2563EB; text-decoration: none; }
+        .article-meta { text-align: center; margin-bottom: 40px; }
+        .article-category { display: inline-block; background: #EFF6FF; color: #2563EB; padding: 4px 12px; border-radius: 6px; font-size: 0.75rem; font-weight: 700; margin-bottom: 16px; font-family: -apple-system, sans-serif; }
+        h1 { font-size: clamp(2rem, 5vw, 3rem); font-weight: 800; line-height: 1.2; margin-bottom: 20px; font-family: -apple-system, sans-serif; letter-spacing: -0.02em; }
+        .article-intro { font-size: 1.25rem; color: #475569; margin-bottom: 40px; font-style: italic; }
+        h2 { font-size: 1.75rem; font-weight: 800; margin: 50px 0 16px; font-family: -apple-system, sans-serif; }
+        h3 { font-size: 1.3rem; font-weight: 700; margin: 30px 0 10px; font-family: -apple-system, sans-serif; }
+        p { font-size: 1.125rem; margin-bottom: 20px; }
+        a { color: #2563EB; }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 16px;
+            margin: 30px 0;
+            font-family: -apple-system, sans-serif;
+        }
+        .stat-card {
+            background: #F8FAFC;
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+            border: 1px solid #E2E8F0;
+        }
+        .stat-value { font-size: 2rem; font-weight: 800; color: #2563EB; display: block; }
+        .stat-label { font-size: 0.85rem; color: #64748B; margin-top: 4px; }
+        .timeline {
+            background: #F8FAFC;
+            padding: 24px;
+            border-radius: 12px;
+            margin: 24px 0;
+            font-family: -apple-system, sans-serif;
+        }
+        .timeline-item {
+            padding: 12px 0;
+            border-bottom: 1px solid #E2E8F0;
+            display: flex;
+            gap: 16px;
+        }
+        .timeline-item:last-child { border-bottom: none; }
+        .timeline-day { font-weight: 700; color: #2563EB; min-width: 80px; }
+        .lesson-box {
+            background: linear-gradient(135deg, #FEF3C7 0%, #FDE68A 100%);
+            border-left: 4px solid #F59E0B;
+            padding: 20px;
+            margin: 24px 0;
+            border-radius: 8px;
+            font-family: -apple-system, sans-serif;
+        }
+        .lesson-box strong { color: #92400E; }
+        .cta-box {
+            background: linear-gradient(135deg, #2563EB 0%, #1E40AF 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 16px;
+            text-align: center;
+            margin: 50px 0;
+            font-family: -apple-system, sans-serif;
+        }
+        .cta-box h3 { font-size: 1.5rem; margin-bottom: 12px; color: white; }
+        .cta-box a {
+            display: inline-block;
+            background: #10B981;
+            color: white;
+            padding: 14px 32px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 700;
+        }
+        footer { background: #F8FAFC; padding: 40px 20px; text-align: center; color: #64748B; font-size: 0.9rem; border-top: 1px solid #E2E8F0; margin-top: 80px; font-family: -apple-system, sans-serif; }
+        footer a { color: #2563EB; text-decoration: none; margin: 0 8px; }
+        @media (max-width: 600px) { .nav-links a:not(:last-child) { display: none; } }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="/" class="nav-logo">⚡ AI Hustle Lab</a>
+            <div class="nav-links">
+                <a href="/">Home</a>
+                <a href="/blog.html">Blog</a>
+                <a href="/archive.html">Archive</a>
+                <a href="/lead-magnet.html">Free Stack</a>
+            </div>
+        </div>
+    </nav>
+    
+    <article class="article">
+        <div class="breadcrumb"><a href="/">Home</a> / <a href="/blog.html">Blog</a> / First Micro-Tool Experiment</div>
+        
+        <div class="article-meta">
+            <div class="article-category">EXPERIMENT · JAN 8, 2026</div>
+        </div>
+        
+        <h1>I Built an AI Micro-Tool in 7 Days for $0 — The Honest Report</h1>
+        <p class="article-intro">Week 1 results from my first AI side hustle experiment. Real numbers, real mistakes, and what I'd do differently next time.</p>
+        
+        <h2>The idea</h2>
+        
+        <p>I built an online character counter tool — the kind people search for when writing tweets, meta descriptions, or essays with character limits.</p>
+        
+        <p>Why this idea?</p>
+        
+        <ul>
+            <li><strong>Real demand:</strong> "Character counter" gets ~500K searches/month</li>
+            <li><strong>Weak competition:</strong> Top results are ugly, outdated, ad-heavy</li>
+            <li><strong>Buildable fast:</strong> 3-4 days with AI</li>
+            <li><strong>Clear monetization:</strong> Display ads + affiliate links for writing tools</li>
+            <li><strong>$0 startup:</strong> Free hosting, free AI tools, free design</li>
+        </ul>
+        
+        <h2>Week 1 stats (honest)</h2>
+        
+        <div class="stats-grid">
+            <div class="stat-card">
+                <span class="stat-value">23</span>
+                <span class="stat-label">Visitors</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-value">$0</span>
+                <span class="stat-label">Revenue</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-value">15h</span>
+                <span class="stat-label">Time invested</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-value">$0</span>
+                <span class="stat-label">Money spent</span>
+            </div>
+        </div>
+        
+        <p>Yes, those numbers are tiny. But they tell the real story of starting from zero.</p>
+        
+        <h2>The 7-day timeline</h2>
+        
+        <div class="timeline">
+            <div class="timeline-item">
+                <span class="timeline-day">Day 1</span>
+                <span><strong>Research & validation</strong> — Searched Google, analyzed top 10 results, identified weaknesses. 3 hours.</span>
+            </div>
+            <div class="timeline-item">
+                <span class="timeline-day">Day 2</span>
+                <span><strong>Design & UX plan</strong> — Sketched wireframes in Canva. Listed 5 features competitors lacked. 2 hours.</span>
+            </div>
+            <div class="timeline-item">
+                <span class="timeline-day">Day 3-4</span>
+                <span><strong>Build with AI</strong> — Used Claude to write the tool logic. HTML/CSS/JS generated. 6 hours.</span>
+            </div>
+            <div class="timeline-item">
+                <span class="timeline-day">Day 5</span>
+                <span><strong>Testing & fixes</strong> — Mobile responsiveness, dark mode, edge cases. 2 hours.</span>
+            </div>
+            <div class="timeline-item">
+                <span class="timeline-day">Day 6</span>
+                <span><strong>Deploy & SEO</strong> — Cloudflare Pages, Google Search Console, sitemap. 1.5 hours.</span>
+            </div>
+            <div class="timeline-item">
+                <span class="timeline-day">Day 7</span>
+                <span><strong>Content & submission</strong> — Wrote FAQ + About page. Submitted to Bing. 30 min.</span>
+            </div>
+        </div>
+        
+        <h2>The exact stack I used</h2>
+        
+        <p>Everything free:</p>
+        
+        <ul>
+            <li><strong>Code:</strong> Claude (free) wrote the HTML/CSS/JS</li>
+            <li><strong>Hosting:</strong> Cloudflare Pages (free tier)</li>
+            <li><strong>Domain:</strong> Using free Cloudflare subdomain (buying custom domain at month 2 if traffic picks up)</li>
+            <li><strong>Design:</strong> Canva free for logo and favicon</li>
+            <li><strong>Analytics:</strong> Google Analytics 4 (free)</li>
+            <li><strong>SEO:</strong> Google Search Console + Bing Webmaster Tools</li>
+        </ul>
+        
+        <p><strong>Total cost: $0</strong></p>
+        
+        <h2>What went wrong</h2>
+        
+        <div class="lesson-box">
+            <strong>Lesson 1:</strong> I almost shipped a bad idea. My first choice was a "word counter" — but those have heavy competition (Microsoft Word, Google Docs). Pivoted to character counter on day 2. Validation saved me weeks.
+        </div>
+        
+        <div class="lesson-box">
+            <strong>Lesson 2:</strong> Claude free tier ran out twice. Had to wait 4 hours for quota reset. Plan content in batches to avoid this.
+        </div>
+        
+        <div class="lesson-box">
+            <strong>Lesson 3:</strong> SEO takes time. Week 1 = 23 visitors. Realistic month 1 = 100-300 visitors if I keep publishing content.
+        </div>
+        
+        <div class="lesson-box">
+            <strong>Lesson 4:</strong> Mobile responsiveness broke twice. Always test on actual phone before declaring "done."
+        </div>
+        
+        <h2>What's working</h2>
+        
+        <p>The tool itself works great. Clean UI, fast, mobile-friendly. Visitors who land on it stay (low bounce rate).</p>
+        
+        <p>The problem isn't the product. The problem is traffic. I need more content and backlinks.</p>
+        
+        <h2>Week 2 plan</h2>
+        
+        <ul>
+            <li>Write 3 supporting articles (SEO content)</li>
+            <li>Apply for Google AdSense</li>
+            <li>Cross-link to AI Hustle Lab (this site)</li>
+            <li>Submit to 10 free directories</li>
+            <li>Start tracking keyword rankings</li>
+        </ul>
+        
+        <h2>Realistic expectations</h2>
+        
+        <p>Here's what success looks like at different stages:</p>
+        
+        <ul>
+            <li><strong>Month 1:</strong> 100-500 visitors, $0-5 revenue</li>
+            <li><strong>Month 3:</strong> 1,000-5,000 visitors, $20-100 revenue</li>
+            <li><strong>Month 6:</strong> 10,000+ visitors, $200-500 revenue</li>
+            <li><strong>Month 12:</strong> 50,000+ visitors, $1,000-3,000 revenue</li>
+        </ul>
+        
+        <p>Yes, it's slow. Yes, it compounds. The first 3 months are about building the asset. The next 9 are about harvesting it.</p>
+        
+        <div class="cta-box">
+            <h3>Want the exact prompt stack I used?</h3>
+            <p>The 100 AI prompts that built this micro-tool (and everything else I'm building) — copy-paste ready.</p>
+            <a href="/digital-product.html">Get the Prompt Pack ($17) →</a>
+        </div>
+        
+        <h2>Should you build a micro-tool site?</h2>
+        
+        <p><strong>Yes, if:</strong></p>
+        <ul>
+            <li>You're patient (3-6 months to meaningful traffic)</li>
+            <li>You can write 2-3 articles per week</li>
+            <li>You pick a low-competition keyword</li>
+            <li>You're okay with $0 month 1</li>
+        </ul>
+        
+        <p><strong>No, if:</strong></p>
+        <ul>
+            <li>You need money in 30 days</li>
+            <li>You hate writing content</li>
+            <li>You pick a competitive keyword (like "calculator")</li>
+            <li>You won't publish consistently</li>
+        </ul>
+        
+        <p>Hit reply: are you building a micro-tool site? What keyword are you targeting? I'll help you evaluate.</p>
+        
+        <p><em>— [Your Name]</em></p>
+    </article>
+    
+    <footer>
+        <p>© 2026 AI Hustle Lab · Built by a real human with AI tools</p>
+        <p><a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/contact.html">Contact</a></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | AI Hustle Lab</title>
+    <meta name="description" content="Get in touch with AI Hustle Lab. Questions, partnerships, or just want to say hi.">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%232563EB'/%3E%3Ctext x='50' y='68' font-family='Arial' font-size='60' font-weight='bold' fill='white' text-anchor='middle'%3EAH%3C/text%3E%3C/svg%3E">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #0F172A; background: white; }
+        nav { background: white; border-bottom: 1px solid #E2E8F0; padding: 16px 20px; }
+        .nav-container { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .nav-logo { font-weight: 800; color: #0F172A; text-decoration: none; font-size: 1.1rem; }
+        .nav-links a { color: #64748B; text-decoration: none; margin-left: 24px; font-size: 0.95rem; font-weight: 500; }
+        .container { max-width: 600px; margin: 0 auto; padding: 60px 20px; }
+        h1 { font-size: 2.5rem; font-weight: 800; margin-bottom: 16px; text-align: center; }
+        .subtitle { text-align: center; color: #64748B; margin-bottom: 50px; }
+        .contact-form { background: #F8FAFC; padding: 32px; border-radius: 16px; }
+        .form-group { margin-bottom: 20px; }
+        label { display: block; font-weight: 600; margin-bottom: 8px; font-size: 0.95rem; }
+        input, textarea { width: 100%; padding: 12px 16px; border: 2px solid #E2E8F0; border-radius: 8px; font-size: 16px; font-family: inherit; outline: none; transition: border 0.2s; }
+        input:focus, textarea:focus { border-color: #2563EB; }
+        textarea { resize: vertical; min-height: 120px; }
+        button { background: #2563EB; color: white; border: none; padding: 14px 32px; border-radius: 8px; font-size: 16px; font-weight: 700; cursor: pointer; width: 100%; transition: all 0.2s; }
+        button:hover { background: #1E40AF; }
+        .email-direct { text-align: center; margin-top: 30px; padding-top: 30px; border-top: 1px solid #E2E8F0; color: #64748B; }
+        .email-direct a { color: #2563EB; text-decoration: none; font-weight: 600; }
+        footer { background: #F8FAFC; padding: 40px 20px; text-align: center; color: #64748B; font-size: 0.9rem; border-top: 1px solid #E2E8F0; margin-top: 80px; }
+        footer a { color: #2563EB; text-decoration: none; margin: 0 8px; }
+        @media (max-width: 600px) { .nav-links a:not(:last-child) { display: none; } }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="/" class="nav-logo">⚡ AI Hustle Lab</a>
+            <div class="nav-links">
+                <a href="/">Home</a>
+                <a href="/blog.html">Blog</a>
+                <a href="/archive.html">Archive</a>
+                <a href="/lead-magnet.html">Free Stack</a>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <h1>Get in touch</h1>
+        <p class="subtitle">Questions, partnerships, or just want to say hi? Drop a message.</p>
+        
+        <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+        
+        <div class="email-direct">
+            Or email directly: <a href="mailto:hello@aihustlelab.com">hello@aihustlelab.com</a>
+        </div>
+    </div>
+    
+    <footer>
+        <p>© 2026 AI Hustle Lab · Built by a real human with AI tools</p>
+        <p><a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/contact.html">Contact</a></p>
+    </footer>
+</body>
+</html>

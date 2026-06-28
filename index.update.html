@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Hustle Lab — Build AI Side Hustles in Public</title>
+    <meta name="description" content="I build AI side hustles in public and show you exactly how. Real experiments, real numbers, real tools. Free newsletter.">
+    <meta name="keywords" content="AI side hustle, make money with AI, AI tools, passive income, automation, AI newsletter">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="AI Hustle Lab — Build AI Side Hustles in Public">
+    <meta property="og:description" content="Real AI side hustle experiments with honest income reports. Free newsletter.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://aihustlelab.com">
+    <meta property="og:image" content="https://aihustlelab.com/og-image.png">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AI Hustle Lab">
+    <meta name="twitter:description" content="Real AI side hustle experiments. Real numbers. No fluff.">
+    
+    <!-- Google Analytics - REPLACE G-XXXXXXXXXX WITH YOUR ID -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%232563EB'/%3E%3Ctext x='50' y='68' font-family='Arial' font-size='60' font-weight='bold' fill='white' text-anchor='middle'%3EAH%3C/text%3E%3C/svg%3E">
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "AI Hustle Lab",
+        "url": "https://aihustlelab.com",
+        "description": "Real AI side hustle experiments with honest income reports",
+        "publisher": {
+            "@type": "Organization",
+            "name": "AI Hustle Lab"
+        }
+    }
+    </script>
+    
+    <style>
+        :root {
+            --primary: #2563EB;
+            --primary-dark: #1E40AF;
+            --secondary: #0F172A;
+            --accent: #10B981;
+            --bg: #ffffff;
+            --bg-alt: #F8FAFC;
+            --text: #0F172A;
+            --text-muted: #64748B;
+            --border: #E2E8F0;
+            --card-bg: #ffffff;
+        }
+        
+        [data-theme="dark"] {
+            --primary: #3B82F6;
+            --primary-dark: #2563EB;
+            --secondary: #F8FAFC;
+            --accent: #10B981;
+            --bg: #0F172A;
+            --bg-alt: #1E293B;
+            --text: #F8FAFC;
+            --text-muted: #94A3B8;
+            --border: #334155;
+            --card-bg: #1E293B;
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background: var(--bg);
+            transition: background 0.3s, color 0.3s;
+        }
+        
+        nav {
+            position: sticky;
+            top: 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border);
+            z-index: 100;
+            transition: all 0.3s;
+        }
+        
+        [data-theme="dark"] nav {
+            background: rgba(15, 23, 42, 0.95);
+        }
+        
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 16px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .nav-logo {
+            font-weight: 800;
+            color: var(--text);
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 24px;
+            align-items: center;
+        }
+        
+        .nav-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        
+        .nav-links a:hover { color: var(--primary); }
+        
+        .theme-toggle {
+            background: none;
+            border: 1px solid var(--border);
+            color: var(--text);
+            padding: 6px 12px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: all 0.2s;
+        }
+        
+        .theme-toggle:hover { background: var(--bg-alt); }
+        
+        .hero {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: white;
+            padding: 80px 20px 100px;
+            text-align: center;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .container-wide {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .logo-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.15);
+            padding: 8px 16px;
+            border-radius: 100px;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 24px;
+            backdrop-filter: blur(10px);
+        }
+        
+        h1 {
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 20px;
+            letter-spacing: -0.02em;
+        }
+        
+        .hero-subtitle {
+            font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+            opacity: 0.95;
+            margin-bottom: 40px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .subscribe-form {
+            display: flex;
+            gap: 12px;
+            max-width: 500px;
+            margin: 0 auto;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .subscribe-form input[type="email"] {
+            flex: 1;
+            min-width: 250px;
+            padding: 16px 20px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-radius: 12px;
+            font-size: 16px;
+            background: rgba(255, 255, 255, 0.95);
+            color: var(--secondary);
+            outline: none;
+            transition: all 0.2s;
+        }
+        
+        .subscribe-form input[type="email"]:focus {
+            border-color: white;
+            background: white;
+        }
+        
+        .subscribe-form button {
+            padding: 16px 32px;
+            background: var(--accent);
+            color: white;
+            border: none;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.2s;
+            white-space: nowrap;
+        }
+        
+        .subscribe-form button:hover {
+            background: #059669;
+            transform: translateY(-2px);
+        }
+        
+        .trust-badges {
+            margin-top: 24px;
+            font-size: 14px;
+            opacity: 0.85;
+        }
+        
+        .section {
+            padding: 80px 20px;
+        }
+        
+        .section-alt {
+            background: var(--bg-alt);
+        }
+        
+        h2 {
+            font-size: clamp(2rem, 4vw, 2.5rem);
+            font-weight: 800;
+            text-align: center;
+            margin-bottom: 16px;
+            letter-spacing: -0.02em;
+        }
+        
+        .section-subtitle {
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            margin-bottom: 60px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 32px;
+        }
+        
+        .feature-card {
+            background: var(--card-bg);
+            padding: 32px;
+            border-radius: 16px;
+            border: 1px solid var(--border);
+            transition: all 0.2s;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+            border-color: var(--primary);
+        }
+        
+        [data-theme="dark"] .feature-card:hover {
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+        }
+        
+        .feature-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 48px;
+            height: 48px;
+            background: #EFF6FF;
+            border-radius: 12px;
+            font-size: 24px;
+            margin-bottom: 16px;
+        }
+        
+        [data-theme="dark"] .feature-icon {
+            background: rgba(59, 130, 246, 0.2);
+        }
+        
+        .feature-card h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        
+        .feature-card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+        
+        .archive-list {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .archive-item {
+            background: var(--card-bg);
+            padding: 24px;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            margin-bottom: 16px;
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.2s;
+        }
+        
+        .archive-item:hover {
+            border-color: var(--primary);
+            transform: translateX(4px);
+        }
+        
+        .archive-date {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            font-weight: 600;
+            min-width: 80px;
+        }
+        
+        .archive-title {
+            font-weight: 600;
+            flex: 1;
+        }
+        
+        .cta-section {
+            background: linear-gradient(135deg, var(--secondary) 0%, #1E293B 100%);
+            color: white;
+            text-align: center;
+        }
+        
+        .cta-section h2 { color: white; }
+        .cta-section .section-subtitle { color: #94A3B8; }
+        
+        .cta-button {
+            display: inline-block;
+            padding: 18px 40px;
+            background: var(--accent);
+            color: white;
+            text-decoration: none;
+            border-radius: 12px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: all 0.2s;
+            margin-top: 20px;
+        }
+        
+        .cta-button:hover {
+            background: #059669;
+            transform: translateY(-2px);
+        }
+        
+        footer {
+            background: var(--bg-alt);
+            padding: 40px 20px;
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            border-top: 1px solid var(--border);
+        }
+        
+        footer a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: var(--card-bg);
+            border-radius: 50%;
+            color: var(--text-muted);
+            text-decoration: none;
+            transition: all 0.2s;
+            border: 1px solid var(--border);
+            font-weight: bold;
+        }
+        
+        .social-links a:hover {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+        
+        @media (max-width: 600px) {
+            .hero { padding: 60px 20px 80px; }
+            .section { padding: 60px 20px; }
+            .archive-item {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 8px;
+            }
+            .nav-links { gap: 12px; }
+            .nav-links a:not(.theme-toggle) { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="/" class="nav-logo">⚡ AI Hustle Lab</a>
+            <div class="nav-links">
+                <a href="/blog.html">Blog</a>
+                <a href="/archive.html">Archive</a>
+                <a href="/lead-magnet.html">Free Stack</a>
+                <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
+            <div class="logo-badge">⚡ AI HUSTLE LAB</div>
+            <h1>I build AI side hustles in public.<br>Then I show you exactly how.</h1>
+            <p class="hero-subtitle">Real experiments. Real numbers. Real tools. Every Tuesday and Friday, I break down the AI side hustles I'm actually building — the wins, the losses, and the exact systems.</p>
+            
+            <form class="subscribe-form" action="https://aihustlelabaffiliate.beehiiv.com/subscribe" method="get">
+                <input type="email" name="email" placeholder="your@email.com" required>
+                <button type="submit">Get Free Access →</button>
+            </form>
+            
+            <p class="trust-badges">✓ Free forever &nbsp;·&nbsp; ✓ No spam &nbsp;·&nbsp; ✓ Unsubscribe anytime</p>
+        </div>
+    </section>
+
+    <!-- What You Get -->
+    <section class="section">
+        <div class="container">
+            <h2>What you get every week</h2>
+            <p class="section-subtitle">A practical newsletter for builders who want to make money with AI — without the fluff.</p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🛠️</div>
+                    <h3>Tuesday: Real Experiments</h3>
+                    <p>I share an AI side hustle I'm building that week — the setup, costs, and honest income reports. No hypotheticals.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Friday: Practical Breakdowns</h3>
+                    <p>One AI tool, prompt pack, or automation system you can copy this weekend. Tested and ranked.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💰</div>
+                    <h3>$0 AI Stack</h3>
+                    <p>The exact free tools I'm using to build everything. Most "AI stacks" cost $200+/month. Mine costs $0.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Honest Numbers</h3>
+                    <p>Real revenue reports. Real losses. Real timelines. No fake screenshots or income claims.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Side Hustle Blueprints</h3>
+                    <p>Step-by-step systems for AI micro-sites, newsletters, faceless YouTube, print-on-demand, and more.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🤝</div>
+                    <h3>Builder Community</h3>
+                    <p>Reply to any email. I read everything. Your questions and experiments shape future issues.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Issues -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2>Latest experiments</h2>
+            <p class="section-subtitle">Every issue documents what I'm actually building.</p>
+            
+            <div class="archive-list">
+                <a href="/issue-3.html" class="archive-item">
+                    <div class="archive-date">Issue #3</div>
+                    <div class="archive-title">I built an AI micro-tool in 7 days for $0 — the honest week-1 report</div>
+                </a>
+                <a href="/issue-2.html" class="archive-item">
+                    <div class="archive-date">Issue #2</div>
+                    <div class="archive-title">My $0/month AI stack (and the 4 paid tools I cancelled)</div>
+                </a>
+                <a href="/issue-1.html" class="archive-item">
+                    <div class="archive-date">Issue #1</div>
+                    <div class="archive-title">I'm building AI side hustles in public. Here's the deal.</div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section cta-section">
+        <div class="container">
+            <h2>Start building today</h2>
+            <p class="section-subtitle">Free newsletter. No upsells. Just real experiments.</p>
+            <a href="https://aihustlelabaffiliate.beehiiv.com/subscribe" class="cta-button">Subscribe Free →</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social-links">
+            <a href="https://twitter.com/aihustlelab" title="Twitter">𝕏</a>
+            <a href="https://linkedin.com/company/aihustlelab" title="LinkedIn">in</a>
+            <a href="https://github.com/aihustlelab" title="GitHub">GH</a>
+            <a href="mailto:hello@aihustlelab.com" title="Email">✉</a>
+        </div>
+        <p>© 2026 AI Hustle Lab · Built by a real human with AI tools</p>
+        <p><a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/contact.html">Contact</a></p>
+    </footer>
+
+    <script>
+        function toggleTheme() {
+            const body = document.documentElement;
+            const current = body.getAttribute('data-theme');
+            const newTheme = current === 'dark' ? 'light' : 'dark';
+            body.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            document.querySelector('.theme-toggle').textContent = newTheme === 'dark' ? '☀️' : '🌙';
+        }
+        
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        if (savedTheme === 'dark') {
+            document.documentElement.setAttribute('data-theme', 'dark');
+            document.addEventListener('DOMContentLoaded', () => {
+                const toggle = document.querySelector('.theme-toggle');
+                if (toggle) toggle.textContent = '☀️';
+            });
+        }
+        
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) target.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>
